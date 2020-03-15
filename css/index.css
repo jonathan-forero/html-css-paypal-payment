@@ -225,3 +225,15 @@ nav.footer li a {
 nav.footer li a:hover {
   color: var(--white-color);
 }
+
+/* ------------------------- sell section */
+.sell__pay {
+  background-color: var(--white-color);
+  box-shadow: var(--box-shadow);
+  padding: var(--space-10);
+}
+
+.sell__image-container {
+  margin: auto;
+  max-width: 150px;
+}
