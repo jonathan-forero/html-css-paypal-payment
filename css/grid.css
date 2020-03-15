@@ -1,9 +1,11 @@
 .grid .container {
   margin: auto;
   max-width: 900px;
+  padding: 4rem 0;
 }
 
 .grid .row {
+  align-items: center;
   display: flex;
 }
 
@@ -71,6 +73,10 @@
 }
 
 @media (max-width: 900px) {
+  .grid .container {
+    max-width: 85%;
+  }
+
   .grid .row {
     flex-direction: column;
   }

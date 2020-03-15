@@ -22,3 +22,13 @@
     width: 70%;
   }
 }
+
+@media (max-width: 900px) {
+  .product-page .img-content img {
+    width: 30%;
+  }
+
+  .product-page .column-reverse {
+    flex-flow: column-reverse;
+  }
+}

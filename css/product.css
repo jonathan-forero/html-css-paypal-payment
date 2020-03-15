@@ -1,0 +1,16 @@
+.product-page__title {
+  font-size: 30px;
+  padding: 0 5%;
+}
+
+.product-page .img-content {
+  text-align: center;
+}
+
+.product-page .img-content img {
+  width: 80%;
+}
+
+.product-page__info__description {
+  line-height: 1.5rem;
+}
