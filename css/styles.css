@@ -57,6 +57,7 @@ nav li a:hover {
 
 /* ------------------------- main section */
 .main-section {
+  height: 10rem;
   padding: 7%;
   text-align: center;
 }
@@ -64,7 +65,7 @@ nav li a:hover {
 .main-section__title {
   font-size: 30px;
   margin: auto;
-  width: 50%;
+  width: auto;
 }
 
 .products {
@@ -72,15 +73,18 @@ nav li a:hover {
   background-image: url('../images/curve.png');
   background-size: cover;
   display: flex;
-  height: 50px;
   justify-content: center;
   padding: 10%;
 }
 
 .product {
-  margin-top: -24rem;
+  margin-top: -20%;
   padding: var(--space-10);
-  width: 240px;
+  width: 18.4rem;
+}
+
+.product h1 {
+  margin: 0;
 }
 
 .product .content {
@@ -97,6 +101,10 @@ nav li a:hover {
 
 .product .content .img-content {
   text-align: center;
+}
+
+.product .content .img-content img {
+  width: 100%;
 }
 
 .main-button {
@@ -128,7 +136,7 @@ nav li a:hover {
 }
 
 .feature {
-  width: 15rem;
+  width: 24%;
 }
 
 .feature .content .img-content {
@@ -136,7 +144,7 @@ nav li a:hover {
 }
 
 .feature .content .img-content img {
-  width: 140px;
+  width: 76%;
 
 }
 
@@ -159,7 +167,7 @@ nav li a:hover {
 
 .review {
   padding: var(--space-10);
-  width: 240px;
+  width: 14%;
 }
 
 .review .content {
@@ -179,6 +187,10 @@ nav li a:hover {
 
 .review .content .img-content {
   text-align: center;
+}
+
+.review .content .img-content img {
+  width: 100%;
 }
 
 /* ------------------------- footer section */
@@ -212,45 +224,4 @@ nav.footer li a {
 
 nav.footer li a:hover {
   color: var(--white-color);
-}
-
-/* ------------------------- media querys */
-@media (max-width: 1650px) {
-  .main-section {
-    height: 24rem;
-    padding: 10%;
-  }
-
-  .main-section__title {
-    width: 70%;
-  }
-
-  .products {
-    align-items: center;
-  }
-}
-
-@media (max-width: 768px) {
-  .main-section {
-    height: 44rem;
-  }
-
-  .main-section__title {
-    width: 100%;
-  }
-}
-
-@media (max-width: 560px) {
-  .products {
-    height: 32rem !important;
-    flex-direction: column;
-    justify-content: space-between !important;
-  }
-
-  .product-section .features {
-    align-items: center;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 840px;
-  }
 }

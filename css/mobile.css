@@ -1,0 +1,24 @@
+@media (max-width: 600px) {
+  .main-section,
+  .review-section {
+    height: auto;
+  }
+
+  .product {
+    margin-top: auto;
+  }
+
+  .features,
+  .reviews,
+  .products {
+    align-items: center !important;
+    flex-direction: column;
+    height: auto;
+  }
+
+  .feature,
+  .review {
+    margin: 20px 0;
+    width: 70%;
+  }
+}
