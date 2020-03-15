@@ -1,6 +1,7 @@
+/* ------------------------- imports */
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
-/* ------------------------- variabes */
 
+/* ------------------------- variabes */
 :root {
   /* colors */
   --green-color: #7acc2d;
@@ -27,7 +28,6 @@ body {
 }
 
 /* ------------------------- nav bar section */
-
 nav {
   align-items: center;
   background-color: var(--green-color);
@@ -56,10 +56,15 @@ nav li a:hover {
 }
 
 /* ------------------------- main section */
-
 .main-section {
-  padding: 20%;
+  padding: 7%;
   text-align: center;
+}
+
+.main-section__title {
+  font-size: 30px;
+  margin: auto;
+  width: 50%;
 }
 
 .products {
@@ -75,6 +80,7 @@ nav li a:hover {
 .product {
   margin-top: -24rem;
   padding: var(--space-10);
+  width: 240px;
 }
 
 .product .content {
@@ -98,7 +104,8 @@ nav li a:hover {
   border: none;
   border-radius: 2px;
   color: var(--white-color);
-  font-size: var(--normal);
+  font-size: 18px;
+  font-weight: bold;
   padding: var(--space-10);
   width: 100%;
 }
@@ -108,21 +115,142 @@ nav li a:hover {
   cursor: pointer;
 }
 
-@media (max-width: 930px) {
+/* ------------------------- features section */
+.feature-section {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.feature-section .features {
+  align-items: baseline;
+  display: flex;
+  justify-content: space-between;
+  padding: 5% 20%;
+}
+
+.feature {
+  width: 15rem;
+}
+
+.feature .content .img-content {
+  text-align: center;
+}
+
+.feature .content .img-content img {
+  width: 140px;
+
+}
+
+/* ------------------------- review section */
+.review-section {
+  height: 400px;
+}
+
+.review-section__title {
+  font-size: 30px;
+  margin-top: 6rem;
+  text-align: center;
+}
+
+.reviews {
+  display: flex;
+  height: 50px;
+  justify-content: center;
+}
+
+.review {
+  padding: var(--space-10);
+  width: 240px;
+}
+
+.review .content {
+  background-color: var(--white-color);
+  box-shadow: var(--box-shadow);
+}
+
+.review .content .info{
+  padding: 1rem;
+}
+
+.reviews .content:hover {
+  box-shadow: var(--box-shadow-hover);
+  transform: scale(1.05);
+  transition: all .50s ease-out;
+}
+
+.review .content .img-content {
+  text-align: center;
+}
+
+/* ------------------------- footer section */
+nav.footer {
+  align-items: center;
+  background-color: #313337;
+  color: var(--white-color);
+  display: flex;
+  justify-content: space-between;
+  padding: var(--space-10);
+}
+
+nav.footer .options{
+  width: 100%;
+}
+
+nav.footer ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav.footer li {
+  padding: 0 20px;
+  list-style: none;
+}
+
+nav.footer li a {
+  color: var(--white-color);
+  text-decoration: none;
+}
+
+nav.footer li a:hover {
+  color: var(--white-color);
+}
+
+/* ------------------------- media querys */
+@media (max-width: 1650px) {
   .main-section {
     height: 24rem;
     padding: 10%;
   }
+
+  .main-section__title {
+    width: 70%;
+  }
+
+  .products {
+    align-items: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-section {
+    height: 44rem;
+  }
+
+  .main-section__title {
+    width: 100%;
+  }
 }
 
 @media (max-width: 560px) {
-  .main-section {
-    height: 30rem;
-  }
-
   .products {
     height: 32rem !important;
     flex-direction: column;
     justify-content: space-between !important;
+  }
+
+  .product-section .features {
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 840px;
   }
 }
