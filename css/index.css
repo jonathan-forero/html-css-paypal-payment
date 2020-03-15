@@ -237,3 +237,21 @@ nav.footer li a:hover {
   margin: auto;
   max-width: 150px;
 }
+
+.sell .row {
+  align-items: flex-start;
+}
+
+.sell form label {
+  display: block;
+  font-size: var(--normal);
+  margin: 5px 0;
+}
+
+.sell form input {
+  border: 1px solid var(--black-color);
+  border-radius: 2px;
+  height: 35px;
+  padding: 5px;
+  width: 100%;
+}
