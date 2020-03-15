@@ -1,0 +1,56 @@
+.grid .container {
+  margin: auto;
+  max-width: 900px;
+}
+
+.grid .row {
+  display: flex;
+}
+
+.grid .col-1 {
+  width: 8.3333333333%;
+}
+
+.grid .col-2 {
+  width: 16.6666666666%;
+}
+
+.grid .col-3 {
+  width: 24.999999999%;
+}
+
+.grid .col-4 {
+  width: 33.333333332%;
+}
+
+.grid .col-5 {
+  width: 41.666666665%;
+}
+
+.grid .col-6 {
+  width: 50%;
+}
+
+.grid .col-7 {
+  width: 58.333333331%;
+}
+
+.grid .col-8 {
+  width: 66.666666664%;
+}
+
+.grid .col-9 {
+  width: 74.999999997%;
+}
+
+.grid .col-10 {
+  width: 83.33333333%;
+}
+
+.grid .col-11 {
+  width: 91.666666663%;
+}
+
+.grid .col-12 {
+  width: 100%;
+}
