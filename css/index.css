@@ -19,6 +19,10 @@
   --box-shadow-hover: 0px 2px 3px rgba(0,0,0,.2);
 }
 
+* {
+  box-sizing: border-box;
+}
+
 html,
 body {
   font-family: 'Open Sans', sans-serif;
@@ -248,10 +252,15 @@ nav.footer li a:hover {
   margin: 5px 0;
 }
 
-.sell form input {
+.sell form .data {
   border: 1px solid var(--black-color);
   border-radius: 2px;
   height: 35px;
   padding: 5px;
   width: 100%;
+}
+
+.sell .main-button {
+  border: none;
+  margin-top: 12px;
 }
