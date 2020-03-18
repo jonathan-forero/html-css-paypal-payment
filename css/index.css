@@ -62,6 +62,7 @@ nav li a:hover {
 /* ------------------------- main section */
 .main-section {
   height: 10rem;
+  margin-bottom: 10%;
   padding: 7%;
   text-align: center;
 }
